@@ -9,6 +9,16 @@
   box-sizing: border-box;
 }
 
+/*Temporary Background*/
+
+.gallery {
+  background-color: lightseagreen;
+}
+
+.sign-up {
+  background-color: lightskyblue;
+}
+
 /*General Style*/
 body {
   min-height: 100vh;
