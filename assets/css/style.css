@@ -26,7 +26,7 @@ header {
     position: fixed;
     z-index: 99;
     width: 100%;
-    box-shadow: 0 2px 2px #3a3a3a;
+    
   
 }
 
@@ -47,6 +47,7 @@ h1 {
   font-size: 110%;
   letter-spacing: 4px;
   list-style-type: none;
+  
 }
 
 #menu > li {
@@ -55,6 +56,16 @@ h1 {
 
 .active {
   border-bottom: 1px solid #3a3a3a;
+}
+
+/*Navbar styles with dropdown toggle*/
+nav {
+  position: absolute;
+  background-color: #fff;
+  width: 100%;
+  box-shadow: 0 2px 2px #3a3a3a;
+  padding-left: 0;
+
 }
 /*main content */
 main {
