@@ -25,6 +25,10 @@ header {
   
 }
 
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
 /*main content */
 main {
     background-color: lightgrey;
