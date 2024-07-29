@@ -29,6 +29,13 @@ body {
   font-family: 'Lato', sans-serif;
 }
 
+h1, h2, h3 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: #252525;
+}
+
 /* Header */
 header {
   background-color: #fff;
@@ -47,12 +54,7 @@ header a {
   color: inherit;
 }
 
-h1 {
-  font-family: 'Oswald', sans-serif;
-  text-transform: uppercase;
-  letter-spacing: 2px;
-  color: #252525;
-}
+
 
 /* Navigation bar text*/
 #menu {
@@ -106,21 +108,36 @@ main {
   height: 600px;
   width: 100%;
   background: url(../css/Images/hero-image.webp) no-repeat center center/cover;
+  position: relative;
 
+  #cover-text {
+    /*Final rgba value set the opacity so it is semi-transparent*/
+    background-color: rgba(241, 109, 107, .7);
+    font-size: 150%;
+    position: absolute;
+    bottom: 30px;
+    width: 80%;
+    min-height: 200px;
+    padding-top: 40px;
+    padding-left: 10px;
+  
+  }
 
+  #cover-text > h2, #cover-text > h3 {
+    color:#fff;
+  }
 
 }
-
 /*footer*/
 #social-media {text-align: center;
-  padding: 20px;
+  padding: 20px 0;
   display: flex;
   justify-content: space-evenly;
   list-style-type: none;
 }
 
 #social-media i {
-  font-size: 160%;
+  font-size: 130%;
   padding: 5%;
   color: #252525;
 }
@@ -164,6 +181,13 @@ main {
     /*Push main content down to accommodate larger header*/
     margin-top: 79px;
   }
+
+  /* Hero */
+  #cover-text {
+  width: 300px;
+  right: 50px;
+  }
+  
 }
 
 /*Media query: large screen 992px*/
