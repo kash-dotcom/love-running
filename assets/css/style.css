@@ -132,40 +132,36 @@ main {
 /*reasons section*/
 
 #reasons {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
+  margin: 20px auto;
   width: 90%;
 }
 
-#benefits-physical{
+#reasons h2 {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 230%;
+
+}
+
+#benefits-physical > div, #benefits-mental > div {
   display: inline-block;
   padding-inline-end: 10px;
   margin-left: 20px;
-}
-
-#benefits-mental {
-  display: inline-block;
-  padding-inline-end: 10px;
-  margin-left: 20px;
-}
-
-hr {
-  border-top: 1px solid #3a3a3a;
-  margin: 5px 10;
-}
-
-p {
-  padding: 0 20px;
-}
-
-.benefits-div {
   margin-bottom: 20px;
 }
 
-#reasons-love-running {
-  font-size: 280%;
-  text-align: center;
+#benefits-physical, #benefits-mental {
+  display: inline-block;
+  padding-inline-end: 10px;
+}
+
+#benefits p {
+  padding: 0 20px;
+}
+
+#benefits hr {
+  border-top: 1px solid #3a3a3a;
+  margin: 5px 0;
 }
 
 /*footer*/
