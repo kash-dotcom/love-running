@@ -132,10 +132,14 @@ main {
 /*reasons section*/
 
 #benefits-physical{
+  display: inline-block;
+  padding-inline-end: 10px;
   margin-left: 20px;
 }
 
 #benefits-mental {
+  display: inline-block;
+  padding-inline-end: 10px;
   margin-left: 20px;
 }
 
