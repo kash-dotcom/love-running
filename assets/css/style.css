@@ -243,14 +243,61 @@ main {
   right: 50px;
   }
 
+  /*reasons section */
+  #benefits-physical, #benefits-mental {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  #benefits-physical > div, #benefits-mental > div {
+    width: 75%;
+  }
+
+  #benefits-mental > div {
+    text-align: end;
+    align-self: flex-end;
+  }
 }
 
 /*Media query: large screen 992px*/
 
-@media screen and (min-width: 992px){
+@media screen and (min-width: 992px) {
   /*Header - hover over menu*/
   #menu a:hover{
     text-decoration: underline;
     }
   
 }
+
+/*Media query: large screen 1200px*/
+@media screen and (min-width: 1200px) {
+  #benefits-physical, #benefits-image, #benefits-mental {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+  }
+  
+  }
+  
+}
+/*circle cover background (bg)*/
+
+/*
+#circle-cover-bg {
+  background: url(../css/images/reasons-image.webp) no-repeat top center / cover;
+  height: 90vw;
+  width: 90vw;
+  margin-bottom: 20px;
+  /* Makes the square image into a circle 
+  border-radius: 50%;
+  max-width: 300px;
+  max-height: 300px;
+}
+
+#benefits-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+*/
