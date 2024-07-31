@@ -69,10 +69,10 @@ header a {
   margin-bottom: 1em;
 }
 
-/*.active {
+.active {
   border-bottom: 1px solid #3a3a3a;
 }
-*/
+
 /*Navbar styles with dropdown toggle*/
 nav {
   position: absolute;
@@ -139,20 +139,14 @@ main {
 #reasons h2 {
   margin-bottom: 20px;
   text-align: center;
-  font-size: 230%;
+  font-size: 280%;
 
 }
 
-#benefits-physical > div, #benefits-mental > div {
-  display: inline-block;
-  padding-inline-end: 10px;
-  margin-left: 20px;
-  margin-bottom: 20px;
-}
-
-#benefits-physical, #benefits-mental {
-  display: inline-block;
-  padding-inline-end: 10px;
+#benefits-physical>div,
+#benefits-mental>div {
+    line-height: 20px;
+    margin-bottom: 20px;
 }
 
 #benefits p {
@@ -184,7 +178,8 @@ main {
 }
 
 /*footer*/
-#social-media {text-align: center;
+#social-media {
+  text-align: center;
   padding: 20px 0;
   display: flex;
   justify-content: space-evenly;
@@ -192,9 +187,9 @@ main {
 }
 
 #social-media i {
-  font-size: 130%;
+  font-size: 160%;
   padding: 5%;
-  color: #252525;
+  color: #3a3a3a
 }
 
 /*Media query: tablets and larger (768px and up*/
@@ -244,43 +239,60 @@ main {
   }
 
   /*reasons section */
-  #benefits-physical, #benefits-mental {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-  }
+  #benefits-physical,
+    #benefits-mental {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
 
-  #benefits-physical > div, #benefits-mental > div {
-    width: 75%;
-  }
+    #benefits-physical>div,
+    #benefits-mental>div {
+        width: 75%;
+    }
 
-  #benefits-mental > div {
-    text-align: end;
-    align-self: flex-end;
-  }
-}
+    #benefits-mental>div {
+        text-align: end;
+        align-self: flex-end;
+    }
 
 /*Media query: large screen 992px*/
 
 @media screen and (min-width: 992px) {
-  /*Header - hover over menu*/
-  #menu a:hover{
-    text-decoration: underline;
-    }
-  
+  #menu a:hover {
+      border-bottom: 1px solid #3a3a3a;
+  }
 }
 
 /*Media query: large screen 1200px*/
 @media screen and (min-width: 1200px) {
-  #benefits-physical, #benefits-image, #benefits-mental {
+  #benefits {
     display: flex;
     flex-direction: row;
-    width: 100%;
-  }
-  
-  }
-  
 }
+
+#benefits > div {
+    flex: 1;
+}
+
+#benefits-image {
+    order: 0
+}
+
+#benefits-mental {
+    order: 1;
+}
+
+#benefits-mental > div {
+    align-self: flex-start;
+}
+
+#benefits-physical > div {
+    align-self: flex-end;
+}
+}
+  
+
 /*circle cover background (bg)*/
 
 /*
