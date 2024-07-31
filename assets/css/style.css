@@ -36,7 +36,10 @@ h1, h2, h3 {
   color: #252525;
 }
 
-
+/*keeps the text so it fools google search but hides it for the user*/
+.hidden-heading {
+  display: none;
+}
 
 /* Header */
 header {
