@@ -106,7 +106,7 @@ main {
  
   /*make main element take up any surplus space to push footer down*/
   flex: 1 0 auto;
-  margin-top: 47px;
+  margin-top: 50px;
 }
 /* Hero section */
 #hero {
@@ -178,6 +178,11 @@ main {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+/* Gallery page*/
+#photos img {
+  width: 100%;
 }
 
 /*footer*/
@@ -259,7 +264,7 @@ main {
   /* Main content */
   main {
     /*Push main content down to accommodate larger header*/
-    margin-top: 79px;
+    margin-top: 50px;
   }
 
   /* Hero */
