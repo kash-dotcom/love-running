@@ -36,10 +36,30 @@
     </header>
 
     <!-- Main Content-->
-    <main>Sign Up</main>
-    <div class="sign-up">
+    <main>
+        <section id="signup">
+            <h2>Let's get you signed up!</h2>
+            <form action="https://formdump.codeinstitute.net" method="post" id="signup-form">
+                <label for="first-name">First Name </label><input type="text" id="first-name" name="first-name" require>
+                <br>
+                <label for="last-name">Last Name </label><input type="text" id="last-name" name="last-name" required> 
+                <br>
+                <label for="email-address">Email Address </label><input type="email" name="email-address" id="email-address" required>
+                <br>
+                <label for="road">Road </label><input type="radio" name="running_preference" id="road" value="Road" required> 
+                <br>
+                <label for="trail"></label>Trail <input type="radio" name="running_preference" value="Trail" id="trail">
+                <br>
+                <label for="both">Both </label><input type="radio" name="running_preference" value="Both" id="both">
+                <br>
+                <input type="submit" value="Let's Run!" id="join-button">   
+            </form>
+        </section>
 
-    </div>
+
+
+    </main>
+
     <!--Footer-->
     <footer>
         <ul id="social-media">
