@@ -183,6 +183,11 @@ main {
 /* Gallery page*/
 #photos img {
   width: 100%;
+  line-height: 1em; /*for broken link so the images don't cover the alt writing*/
+}
+
+#photos {
+  line-height: 0;
 }
 
 /*footer*/
