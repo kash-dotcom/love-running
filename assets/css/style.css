@@ -252,6 +252,27 @@ main {
 
 }
 
+.text-input {
+  border: 1px solid #fafafa;
+  background-color: transparent;
+  border-radius: 2px;
+  margin-left: 30px;
+  margin-right: 30px;
+  display:inline-block;
+  align-items: center;
+  color: #fafafa;
+
+
+  /*inside the box*/
+  height: 25px;
+  width: 80%;
+  border-color: #fafafa;
+}
+
+label {
+  margin-left: 30px;
+  margin-right: 30px;
+}
 
 
 /*Media query: large or landscape phones (576px and up)*/
