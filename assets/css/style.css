@@ -97,6 +97,8 @@ main {
   /*make main element take up any surplus space to push footer down*/
   flex: 1 0 auto;
   margin-top: 50px;
+  display: flex;
+  flex-direction: column;
 }
 /* Hero section */
 #hero {
@@ -238,10 +240,8 @@ main {
   background-color: rgba(60, 60, 60, 0.6);
 }
 
-#main{
-  display: flex;
-  flex-direction: column;
-}
+
+
 /*Media query: large or landscape phones (576px and up)*/
 @media screen and (min-width: 576px) {
   /* Gallery */
