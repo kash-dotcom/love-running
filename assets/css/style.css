@@ -9,16 +9,6 @@
   box-sizing: border-box;
 }
 
-/*Temporary Background*/
-
-.gallery {
-  background-color: lightseagreen;
-}
-
-.sign-up {
-  background-color: lightskyblue;
-}
-
 /*General Style*/
 body {
   min-height: 100vh;
@@ -232,6 +222,26 @@ main {
   color: #fafafa;
 }
 
+/*Signup form page*/
+
+#signup {
+  background-size: cover;
+  background-position: 75%;
+  background-image: url(../images/signup-image.webp);
+  flex-grow: 1;
+  margin-bottom: 20px;
+
+}
+
+#signup-form {
+  color: #fff;
+  background-color: rgba(60, 60, 60, 0.6);
+}
+
+#main{
+  display: flex;
+  flex-direction: column;
+}
 /*Media query: large or landscape phones (576px and up)*/
 @media screen and (min-width: 576px) {
   /* Gallery */
