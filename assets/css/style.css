@@ -17,10 +17,7 @@ body {
   /*Generic project style*/
   color: #3a3a3a;
   font-family: 'Lato', sans-serif;
-}
-div {
-  display: flex;
-}
+
 h1, h2, h3 {
   font-family: 'Oswald', sans-serif;
   text-transform: uppercase;
@@ -93,15 +90,17 @@ nav {
   font-size: 2rem;
 }
 
-/*main content */
+/* Main content */
 main {
- 
-  /*make main element take up any surplus space to push footer down*/
+  /* Enlarge main element to push footer down*/
   flex: 1 0 auto;
-  margin-top: 50px;
+  /* Add margin at the top to prevent content from being covered by the header */
+  margin-top: 47px;
+  /* Enable flex properties for child elements */
   display: flex;
   flex-direction: column;
 }
+
 /* Hero section */
 #hero {
   height: 600px;
@@ -229,66 +228,51 @@ main {
 /*Signup form page*/
 
 #signup {
+  background-image: url("../images/signup-image.webp");
   background-size: cover;
   background-position: 75%;
-  background-image: url(../images/signup-image.webp);
+  padding: 20px 10% 0 10%;
   flex-grow: 1;
-  display: flex;
 }
 
 #signup-form {
-  color: #fff;
+  color: #ffffff;
   background-color: rgba(60, 60, 60, 0.6);
-  align-items: center;
-  margin-top: 20px;
-  margin-left: 10%;
-  margin-right: 10%;
-  margin-bottom: 30px;
+  padding: 30px;
 }
 
-
-#signup h2 {
+#signup-form>h2 {
   color: #fafafa;
-  margin: 30px;
-  font-size: 180%;
-
+  margin-bottom: 20px;
 }
 
 .text-input {
-  border: 1px solid #fafafa;
-  background-color: transparent;
-  border-radius: 2px;
-  margin-left: 30px;
-  margin-right: 30px;
-  display:inline-block;
-  align-items: center;
-  margin-top: 5px;
+  background: transparent;
   color: #fafafa;
-  
-  /*inside the box*/
+  width: 100%;
   height: 25px;
-  width: 80%;
-  border-color: #fafafa;
+  margin: 5px 0 20px 0;
+  border: 1px solid #fafafa;
+  border-radius: 2px;
+  padding: 0 5px;
 }
 
-label {
-  margin-left: 30px;
-  margin-right: 30px;
-}
-
-.radio-button {
+.radio-buttons {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items:stretch;
-
-  
+  justify-content: space-between;
 }
 
-/*
-#trail, #road, #both {
-  
+
+#join-button {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px;
+  font-size: 100%;
+  background-color: #454b1b;
+  color: #fafafa;
 }
-*/
+
 
 /*Media query: large or landscape phones (576px and up)*/
 @media screen and (min-width: 576px) {
